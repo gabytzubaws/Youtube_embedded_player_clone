@@ -1,0 +1,150 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background: #f1f1f1;
+  font-family: sans-serif;
+}
+.site{
+  display: grid;
+  grid-template-areas:
+    "hdr hdr hdr"
+    "videoplayer videoplayer sidebar"
+    "video-footer video-footer sidebar"
+    "desc desc sidebar"
+
+}
+.hdr{
+  background-color: white;
+  grid-area: hdr;
+  display: flex;
+  align-items: center;
+  
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.hdr > input{
+  width: 50%;
+  height: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  font-size: 14px;
+  justify-self: center;
+}
+.menu{
+  margin-right: 40px;
+  margin-left: 20px;
+}
+.menuIcon{
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+#ytb-logo-hdr{
+  margin-right: 40px;
+}
+
+.videoplayer{
+  border: 1px solid lightgrey;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-bottom: -60px;
+  margin-left: 20px;
+  height: 0;
+  grid-area: videoplayer;
+}
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar{
+  margin-top: 20px;
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.next{
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
+}
+
+.next > img {
+  float: left;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.sidebar > img{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  width: 50%;
+}
+.img-container{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.img-container > img{
+  float: left;
+  margin-right: 5px;
+}
+.video-title{
+  font-weight: 500;
+  margin-top: 5px;
+}
+.username{
+  font-size: 13px;
+  color: grey;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.views{
+  margin-top: 0px;
+}
+
+.video-footer{
+  grid-area: video-footer;
+  margin-left: 20px;
+  margin-top: -60px;
+
+}
+
+.desc{
+  margin-left: 20px;
+  grid-area: desc;
+  margin-top: -40px;
+}
+
+.video-title{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.video-info{
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  font-size: 14px;
+}
+.user-desc > img{
+  float: left;
+  margin-right: 10px;
+}
+.username-desc{
+  font-weight: bold;
+}
+.username-subs{
+  font-size: 13px;
+  margin-top: 3px;
+  color: grey;
+}
